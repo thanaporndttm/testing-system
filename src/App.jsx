@@ -14,7 +14,7 @@ import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Container from '@mui/material/Container';
 
-
+import Test1 from './test'; 
 
 const customizedTheme = createTheme({
   palette: {
@@ -132,11 +132,9 @@ function App() {
       </Grid>
       </Container>
       
+      <Test1 />
       
   
-
-      
-      
     </Box>
     </ThemeProvider>
   );
