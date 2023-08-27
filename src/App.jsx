@@ -14,7 +14,7 @@ import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Container from '@mui/material/Container';
 
-import Test1 from './test'; 
+
 
 const customizedTheme = createTheme({
   palette: {
@@ -28,7 +28,6 @@ const customizedTheme = createTheme({
   }
 })
 
-const testForGit = 555;
 
 const testArray1 = [
   {
@@ -117,7 +116,7 @@ function App() {
       <Grid container rowSpacing={1} justifyContent="center"  alignItems="center"  columnSpacing={{ xs: 1, sm: 2, md: 3 }}  sx={{paddingTop: '50px', textDecoration: 'underline'}}>
         <Stack >
           <Typography align="center" > ยังไม่มีข้อสอบ </Typography>
-          <Typography align="center"> กรุณาเข้าใช้ใหม่ในภายหลัง </Typography>
+          <Typography align="center"> กรุณาเข้าใช้ใหม่ในภายหลัง // </Typography>
         </Stack>
       </Grid>
       
