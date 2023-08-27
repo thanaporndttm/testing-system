@@ -31,11 +31,11 @@ export default function Test1() {
 
         return < CardContent >
         <Card sx={{ minWidth: 290}}>
-        <Grid  rowSpacing={1}  justifyContent="flex-start"  columnSpacing={{ xs: 1, sm: 2, md: 3 }}  sx={{paddingTop: '20px', }}>
-        <Stack>
-        {user.name}
-        </Stack>
-      </Grid>
+            <Grid  rowSpacing={1}  justifyContent="flex-start"  columnSpacing={{ xs: 1, sm: 2, md: 3 }}  sx={{paddingTop: '20px', }}>
+                 <Stack>
+                 {user.name}
+                </Stack>
+            </Grid>
         </Card>
       
        
