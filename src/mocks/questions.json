@@ -1,0 +1,169 @@
+{
+  "questions": [
+    {
+      "category": "ความรู้เกี่ยวกับ พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคลโดยทั่วไป",
+      "random": 5,
+      "set": [
+        {
+          "qid": "BGF4M-1",
+          "quiz": "test01",
+          "answer": true,
+          "Adesc": "aaaa",
+          "QCatg": "BG",
+          "QGroup": "F4",
+          "QLevel": "M"
+        },
+        {
+          "qid": "BGF4M-2",
+          "quiz": "test02",
+          "answer": true,
+          "Adesc": "aaaa",
+          "QCatg": "BG",
+          "QGroup": "F4",
+          "QLevel": "M"
+        },
+        {
+          "qid": "BGF4M-3",
+          "quiz": "test03",
+          "answer": true,
+          "Adesc": "aaaa",
+          "QCatg": "BG",
+          "QGroup": "F4",
+          "QLevel": "M"
+        },
+        {
+          "qid": "BGF4M-4",
+          "quiz": "test04",
+          "answer": true,
+          "Adesc": "aaaa",
+          "QCatg": "BG",
+          "QGroup": "F4",
+          "QLevel": "M"
+        },
+        {
+          "qid": "BGF4M-5",
+          "quiz": "test05",
+          "answer": true,
+          "Adesc": "aaaa",
+          "QCatg": "BG",
+          "QGroup": "F4",
+          "QLevel": "M"
+        }
+      ]
+    },
+    {
+      "category": "ความรู้ทั่วไปเกี่ยวกับฐานการประมวลผลข้อมูลส่วนบุคคลตามกฎหมาย",
+      "random": 2,
+      "set": [
+        {
+          "qid": "BGF4M-6",
+          "quiz": "test06",
+          "answer": false,
+          "Adesc": "aaaa",
+          "QCatg": "BG",
+          "QGroup": "F4",
+          "QLevel": "M"
+        },
+        {
+          "qid": "BGF4M-7",
+          "quiz": "test07",
+          "answer": false,
+          "Adesc": "aaaa",
+          "QCatg": "BG",
+          "QGroup": "F4",
+          "QLevel": "M"
+        }
+      ]
+    },
+    {
+      "category": "การขอความยินยอม",
+      "random": 3,
+      "set": [
+        {
+          "qid": "BGF4M-8",
+          "quiz": "test08",
+          "answer": false,
+          "Adesc": "aaaa",
+          "QCatg": "BG",
+          "QGroup": "F4",
+          "QLevel": "M"
+        },
+        {
+          "qid": "BGF4M-9",
+          "quiz": "test09",
+          "answer": false,
+          "Adesc": "aaaa",
+          "QCatg": "BG",
+          "QGroup": "F4",
+          "QLevel": "M"
+        },
+        {
+          "qid": "BGF4M-10",
+          "quiz": "test10",
+          "answer": false,
+          "Adesc": "aaaa",
+          "QCatg": "BG",
+          "QGroup": "F4",
+          "QLevel": "M"
+        }
+      ]
+    },
+    {
+      "category": "บทบาทหน้าที่ของบุคคลต่างๆ ตาม พ.ร.บ.คุ้มครองข้อมูลส่วนบุคคล พ.ศ. 2562",
+      "random": 2,
+      "set": [
+        {
+          "qid": "BGF4M-11",
+          "quiz": "test11",
+          "answer": false,
+          "Adesc": "aaaa",
+          "QCatg": "BG",
+          "QGroup": "F4",
+          "QLevel": "M"
+        },
+        {
+          "qid": "BGF4M-12",
+          "quiz": "test12",
+          "answer": false,
+          "Adesc": "aaaa",
+          "QCatg": "BG",
+          "QGroup": "F4",
+          "QLevel": "M"
+        }
+      ]
+    },
+    {
+      "category": "ข้อควรปฏิบัติ และ มาตรการรักษาความปลอดภัยของข้อมูลส่วนบุคคล",
+      "random": 3,
+      "set": [
+        {
+          "qid": "BGF4M-13",
+          "quiz": "test13",
+          "answer": false,
+          "Adesc": "aaaa",
+          "QCatg": "BG",
+          "QGroup": "F4",
+          "QLevel": "M"
+        },
+        {
+          "qid": "BGF4M-14",
+          "quiz": "test14",
+          "answer": false,
+          "Adesc": "aaaa",
+          "QCatg": "BG",
+          "QGroup": "F4",
+          "QLevel": "M"
+        },
+        {
+          "qid": "BGF4M-15",
+          "quiz": "test15",
+          "answer": false,
+          "Adesc": "aaaa",
+          "QCatg": "BG",
+          "QGroup": "F4",
+          "QLevel": "M"
+        }
+      ]
+    }
+  ]
+}
