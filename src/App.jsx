@@ -1,11 +1,8 @@
-import PropTypes from "prop-types";
+import {Fragment} from 'react';
+import PropTypes from 'prop-types';
 import { PublicClientApplication, InteractionType } from "@azure/msal-browser";
-import {
-  MsalProvider,
-  AuthenticatedTemplate,
-  UnauthenticatedTemplate,
-} from "@azure/msal-react";
-import { RouterProvider } from "react-router-dom";
+import { MsalProvider, AuthenticatedTemplate, UnauthenticatedTemplate } from '@azure/msal-react';
+import { RouterProvider } from 'react-router-dom';
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
@@ -23,6 +20,11 @@ const customizedTheme = createTheme({
     secondary: {
       main: "#ED6F2D",
     },
+
+    background:{
+      paper: '#fff',
+      default: '#F5F5F5',
+    }
   },
 });
 
