@@ -16,6 +16,8 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 
+import Button from '@mui/material/Button';
+
 const value2Boolean = (value) => {
     if (value && typeof value === "string") {
         if (value.toLowerCase() === "true") return true;
@@ -81,47 +83,63 @@ export default function Test1() {
             // console.log(tt)
             return <span key={tt.category}>
 
-                <Container maxWidth='md'>
+                <Container maxWidth='md' sx={{ padding: '0px' }} >
+                    <CardContent>
+                        <Card variant="outlined" sx={{ width: '100%', padding: '24px' }}>
+                            <Typography sx={{ fontariantcaps: 'all-petite-caps', fontWeight: "bold", paddingtop: '10px' }} >
+                                Category: {tt.category}
+                            </Typography>
 
-                    <Typography sx={{ fontariantcaps: 'all-petite-caps', fontWeight: "bold", paddingtop: '10px' }} >
-                        Category : {tt.category}
-                    </Typography>
-
-                </Container>
 
 
-                <Container maxWidth='md' sx={{ paddingtop: '10px' }}>
-                    <FormControl sx={{ width: '100%' }}>
-                        {tt.set.map(function (quest) {
-                            const questionNumber = quest.qid.slice(quest.qid.indexOf('-') + 1); //การ slice 
+                            <Container maxWidth='md' sx={{ padding: '0px' }}>
+                                <FormControl sx={{ width: '100%' }}>
+                                    {tt.set.map(function (quest) {
+                                        const questionNumber = quest.qid.slice(quest.qid.indexOf('-') + 1); //การ slice 
 
-                            return <span key={quest.qid}>
-                                <CardContent >
-                                    <Card sx={{ padding: '16px' }}>
-                                        <FormLabel id="demo-radio-buttons-group-label">{questionNumber}. {quest.quiz} {answers[quest.qid] ? '' : <Typography component='span' color='red'>*</Typography>}</FormLabel>
-                                        <RadioGroup
-                                            value={answers[quest.qid]?.value ?? ""}
-                                            onChange={handleChangeAnswer(quest.qid)}
-                                            aria-labelledby="demo-radio-buttons-group-label"
-                                            name="radio-buttons-group"
-                                        // value={answer}
-                                        // onChange={(event) => {
-                                        //     setAnswer(event.target.value)
-                                        // }}
-                                        >
-                                            <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
-                                            <FormControlLabel value="No" control={<Radio />} label="No" />
+                                        return <span key={quest.qid}>
+                                            <CardContent >
+                                                <Card sx={{ padding: '16px' }}>
+                                                    <FormLabel id="demo-radio-buttons-group-label" 
+                                                    // sx={{lineHeight: '2em'}}
+                                                    >{questionNumber}. {quest.quiz} {answers[quest.qid] ? '' : <Typography component='span' color='red'>*</Typography>}</FormLabel>
+                                                    <RadioGroup
+                                                        value={answers[quest.qid]?.value ?? ""}
+                                                        onChange={handleChangeAnswer(quest.qid)}
+                                                        aria-labelledby="demo-radio-buttons-group-label"
+                                                        name="radio-buttons-group"
+                                                    // value={answer}
+                                                    // onChange={(event) => {
+                                                    //     setAnswer(event.target.value)
+                                                    // }}
+                                                    >
+                                                        <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
+                                                        <FormControlLabel value="No" control={<Radio />} label="No" />
 
-                                        </RadioGroup>
-                                    </Card>
-                                </CardContent>
-                            </span>
-                        })}
-                    </FormControl>
+                                                    </RadioGroup>
+                                                </Card>
+                                            </CardContent>
+                                        </span>
+                                    })}
+                                </FormControl>
+
+                            </Container>
+                        </Card>
+                    </CardContent>
                 </Container>
 
             </span >
+
         })}
+        <Container >
+            <Grid  container justifyContent="flex-end" alignItems="flex-end"  paddingBottom={'20px'} >
+                <Button variant="contained" size="medium" >
+                    SUBMIT
+                </Button>
+            </Grid>
+
+        </Container>
+
     </>
 
     // key = { questions.category.qid }
