@@ -1,0 +1,26 @@
+.popup {
+    width: 50%;
+  }
+  
+  .html-container {
+    margin: 1em 1em 0.3em;
+  }
+  
+  .title {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .btn-confirm {
+    font-family: Kanit;
+  }
+  
+  @media only screen and (max-width:600px) {
+    .popup {
+      width: 90%;
+    }
+    .title {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
