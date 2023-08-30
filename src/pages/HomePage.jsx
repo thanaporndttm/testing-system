@@ -82,12 +82,23 @@ export default function HomePage() {
           <Box sx={{ width: '50%', paddingTop: "10px", margin: "10px" }}>
             <img src="https://testingsystemstorage.blob.core.windows.net/asset/over1.jpg?"
               alt=" Test System " width="100%" />
-            <Typography color="primary" align="center" sx={{ fontWeight: "bold", fontSize: '20px', cursor: 'pointer' }} onClick={handleOpenTest}> PDPA Testing  </Typography>
+            <Typography
+              color="primary"
+              align="center"
+              sx={{
+                fontWeight: "bold",
+                fontSize: '20px',
+                cursor: 'pointer'
+              }}
+              onClick={handleOpenTest}>
+              PDPA Testing 
+            </Typography>
             <Modal
               open={openTest}
               onClose={handleCloseTest}
               aria-labelledby="modal-modal-title"
               aria-describedby="modal-modal-description"
+              sx={{width:'auto'}}
             >
               <Box sx={style}>
                 <IconButton

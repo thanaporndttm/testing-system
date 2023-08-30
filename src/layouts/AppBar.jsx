@@ -51,12 +51,12 @@ export default function NavBar() {
       //   .then(function (response) {
       //     console.log('response: ', response)
       //     setUser(response.data);
-       
+
       //     // response.data.pipe(fs.createWriteStream('ada_lovelace.jpg'))
       //   }).catch(function(error) {
       //     console.error('error: ', error)
       //   });
-      axios.get('user/profile').then(function(response) {
+      axios.get('user/profile').then(function (response) {
         // console.log('response: ', response)
         setUser(response.data);
       })
@@ -65,7 +65,7 @@ export default function NavBar() {
     requestVerifyUser();
   }, [])
 
-  console.log('user:',user);
+  console.log('user:', user);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -86,7 +86,7 @@ export default function NavBar() {
   const handleCloseProblemModal = () => {
     setOpenProblemModal(false);
   };
-  
+
 
   return (
     <Fragment>
@@ -107,18 +107,17 @@ export default function NavBar() {
             container
             rowSpacing={1}
             alignItems="center"
-            // columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-            >
-
-            <Grid item xs sx={{flexGrow:1}}>
+          // columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+          >
+            <Grid item xs sx={{ flexGrow: 1 }}>
               <Typography align="left" sx={{ fontWeight: "bold", fontSize: "16px" }} >Testing System </Typography>
               <Typography align="left"  > สยามคูโบต้าคอร์ปอเรชั่น </Typography>
             </Grid>
 
             <Grid item xs='auto'>
               <Stack>
-                <Typography align="right" > {user?.nameTH}  {user?.lastnameTH}   </Typography>
-             
+                <Typography align="right" > {user?.nameTH}{user?.lastnameTH}</Typography>
+
                 <Typography align="right">  {user?.eid} </Typography>
               </Stack>
             </Grid>
@@ -126,14 +125,12 @@ export default function NavBar() {
             <Grid
               item
               xs='auto'
-              sx={{ paddingLeft: "10px",cursor: 'pointer' }}
+              sx={{ paddingLeft: "10px", cursor: 'pointer' }}
               onClick={handleClick}
             >
               <AccountCircleIcon color="white" sx={{ fontSize: '50px' }} />
             </Grid>
-
           </Grid>
-
           <Menu
             id="basic-menu"
             anchorEl={anchorEl}
